@@ -10,7 +10,6 @@ context('Fluxo de compra ', () => {
     })
 
     it('Clicando no link comprar deve direcionar para a página de compra', () => {
-        
         cy.paginaDeCompra()
 
         // cy.visit('/')
@@ -39,7 +38,6 @@ context('Fluxo de compra ', () => {
         // cy.visit('product/abominable-hoodie')
 
         describe('Adicionando produto', () => {
-            
             cy.adicioneProduto()
 
             // cy.get('.button-variable-item-XS').click()
@@ -48,7 +46,6 @@ context('Fluxo de compra ', () => {
         })
         
         describe('Verificando carrinho', () => {
-            
             cy.verifiqueCarrinho()
 
             // cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()
@@ -59,7 +56,6 @@ context('Fluxo de compra ', () => {
         })
         
         describe('Realizando checkout', () => {
-            
             cy.realizeCheckout()
 
             // cy.url().should('contain', 'checkout')
@@ -82,7 +78,6 @@ context('Fluxo de compra ', () => {
         })
 
         describe('Finalizando pedido ', () => {
-            
             cy.finalizePedido()
             
             // cy.url().should('contain', 'order-received')
