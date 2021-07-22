@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-22T21:50:23.375Z",
+    "end": "2021-07-22T21:51:02.140Z",
+    "duration": 38765,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "edc9c6c7-c43a-4374-b10f-d1a6d6adec62",
+      "title": "",
+      "fullFile": "cypress/integration/compra.spec.js",
+      "file": "cypress/integration/compra.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cce12d1c-8083-45d1-828c-47810a3c2cce",
+          "title": "Fluxo de compra ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Clicando no link comprar deve direcionar para a página de compra",
+              "fullTitle": "Fluxo de compra  Clicando no link comprar deve direcionar para a página de compra",
+              "timedOut": null,
+              "duration": 7545,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.paginaDeCompra(); // cy.visit('/')\n// cy.get('#primary-menu > .menu-item-629 > a').as('menuCompra')\n// cy.get('@menuCompra').click()\n// cy.contains('Produtos')\n// cy.get('@menuCompra').contains('Comprar').and('have.attr', 'href').and('include', 'shop')\n// cy.get('.page-title').should('contain', 'Produtos')\n// cy.url().should('contain', 'shop')",
+              "err": {},
+              "uuid": "ac443bab-fa7a-46e3-a2d3-38af6a294276",
+              "parentUUID": "cce12d1c-8083-45d1-828c-47810a3c2cce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Selecionando primeiro produto da listagem",
+              "fullTitle": "Fluxo de compra  Selecionando primeiro produto da listagem",
+              "timedOut": null,
+              "duration": 4819,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.selecioneProduto(); // cy.visit('shop')\n// cy.get('div[data-product-id=2559]').click()\n// cy.contains('Abominable Hoodie')",
+              "err": {},
+              "uuid": "f84e3d6a-9618-4fff-85b8-78ec29ebb8b9",
+              "parentUUID": "cce12d1c-8083-45d1-828c-47810a3c2cce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Adicionando produto ao carrinho e realizando checkout",
+              "fullTitle": "Fluxo de compra  Adicionando produto ao carrinho e realizando checkout",
+              "timedOut": null,
+              "duration": 18129,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit('product/abominable-hoodie')\ndescribe('Adicionando produto', () => {\n  cy.adicioneProduto(); // cy.get('.button-variable-item-XS').click()\n  // cy.get('.button-variable-item-Blue').click()\n  // cy.get('.single_add_to_cart_button').click()\n});\ndescribe('Verificando carrinho', () => {\n  cy.verifiqueCarrinho(); // cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()\n  // cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .view-cart').click()\n  // cy.get('.page-title').should('contain', 'Carrinho')\n  // cy.url().should('contain', 'cart')\n  // cy.get('.checkout-button').click() \n});\ndescribe('Realizando checkout', () => {\n  cy.realizeCheckout(); // cy.url().should('contain', 'checkout')\n  // cy.get('#billing_first_name').type('Mestre')\n  // cy.get('#billing_last_name').type('Kame')\n  // cy.get('#billing_company').type('Capsula Corp')\n  // cy.get('select#billing_country').select(data.pais, { force: true })\n  // cy.get('#billing_address_1').type(data.endereco)\n  // cy.get('#billing_address_2').type(data.complemento)\n  // cy.get('#billing_city').type(data.cidade)\n  // cy.get('select#billing_state').select(data.estado, { force: true })\n  // cy.get('#billing_postcode').type(data.cep)\n  // cy.get('#billing_phone').type(data.fone)\n  // cy.get('#billing_email').type(data.email)\n  // cy.get('#order_comments').type(data.comentario)\n  // cy.get('#place_order').click()\n});\ndescribe('Finalizando pedido ', () => {\n  cy.finalizePedido(); // cy.url().should('contain', 'order-received')\n  // cy.get('.page-title').should('contain', 'Pedido recebido')\n});",
+              "err": {},
+              "uuid": "91a802c3-6358-4f38-8203-69979e67a9e1",
+              "parentUUID": "cce12d1c-8083-45d1-828c-47810a3c2cce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ac443bab-fa7a-46e3-a2d3-38af6a294276",
+            "f84e3d6a-9618-4fff-85b8-78ec29ebb8b9",
+            "91a802c3-6358-4f38-8203-69979e67a9e1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 30493,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
