@@ -3,6 +3,7 @@
   "baseUrl": "http://lojaebac.ebaconline.art.br/", 
   "projectId": "a9ndee",
   "watchForFileChanges": false,
+  "video": false,
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {
      "configFile": "reporter-config.json"
