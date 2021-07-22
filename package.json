@@ -4,12 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run --spec cypress/integration/compra.spec.js",
+    "report:merge": "mochawesome-merge > full_report.json",
+    "report:mergeB": "npx mochawesome-merge 'mochawesome-report/*.json' > full_report.json",
+    "report:mocha": "marge full_report.json",
+    "report:mochaB": "npx marge full_report.json",
+    "report:cleanMocha": "rm -rf mochawesome-report",
+    "report:cleanMochaB": "rm -rf mochawesome-report full_report.json cypress/reports/cucumber-json/** || true"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^7.7.0"
+    "cypress": "^7.7.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.0.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   }
 }

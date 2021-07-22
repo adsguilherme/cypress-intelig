@@ -35,13 +35,13 @@ context('Login', () => {
         */
 
         //PAGEOBJECT
-        /*  
-        LoginPage.login(data.usuario, data.senha)
-        MinhaContaPage.getUsuarioLogado().should('contain', 'Welcome Eshi Cruz !')
-        MinhaContaPage.getPageTitle().should('contain', 'Minha conta')
-        */
-
+         
+        // LoginPage.login(data.usuario, data.senha)
+        // MinhaContaPage.getUsuarioLogado().should('contain', 'Welcome Eshi Cruz !')
+        // MinhaContaPage.getPageTitle().should('contain', 'Minha conta')
+       
         //COMMANDS
+       
         cy.login(data.usuario, data.senha)
         cy.mensagemBoasVindas().should('contain', 'Welcome Eshi Cruz !')
         
