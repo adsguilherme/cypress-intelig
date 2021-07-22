@@ -1,0 +1,13 @@
+{
+
+    "endereco":"Rua abc, 123",
+    "complemento": "Casa",
+    "cidade": "Sarandi",
+    "estado": "Paraná",
+    "pais": "Brasil",
+    "cep": "87112000",
+    "fone": "(44)9999-9999",
+    "email": "xyz@xyz.io",
+    "comentario": "lorem ipsum dolor sit amet"
+
+}
