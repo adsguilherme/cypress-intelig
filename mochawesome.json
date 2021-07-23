@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 3,
-    "passes": 2,
+    "passes": 3,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-07-22T20:34:48.277Z",
-    "end": "2021-07-22T20:35:22.558Z",
-    "duration": 34281,
+    "failures": 0,
+    "start": "2021-07-23T01:12:37.858Z",
+    "end": "2021-07-23T01:13:19.231Z",
+    "duration": 41373,
     "testsRegistered": 3,
-    "passPercent": 66.66666666666666,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5b979c24-6e1c-4935-bb2e-3ee30449e36c",
+      "uuid": "65ec0fb9-701e-4e74-b964-1eba31c3bc48",
       "title": "",
       "fullFile": "cypress/integration/compra.spec.js",
       "file": "cypress/integration/compra.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1f541b35-855b-4c53-bf8a-822117a44f0e",
+          "uuid": "cf1877c8-ae90-403c-8577-0d000f0f88cf",
           "title": "Fluxo de compra ",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Clicando no link comprar deve direcionar para a página de compra",
               "fullTitle": "Fluxo de compra  Clicando no link comprar deve direcionar para a página de compra",
               "timedOut": null,
-              "duration": 4199,
+              "duration": 8693,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.paginaDeCompra(); // cy.visit('/')\n// cy.get('#primary-menu > .menu-item-629 > a').as('menuCompra')\n// cy.get('@menuCompra').click()\n// cy.contains('Produtos')\n// cy.get('@menuCompra').contains('Comprar').and('have.attr', 'href').and('include', 'shop')\n// cy.get('.page-title').should('contain', 'Produtos')\n// cy.url().should('contain', 'shop')",
               "err": {},
-              "uuid": "3fe2bbbf-7ff3-4cc7-9fa2-881608799d2c",
-              "parentUUID": "1f541b35-855b-4c53-bf8a-822117a44f0e",
+              "uuid": "658ff71b-687c-4c66-95f9-043666a169d5",
+              "parentUUID": "cf1877c8-ae90-403c-8577-0d000f0f88cf",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Selecionando primeiro produto da listagem",
               "fullTitle": "Fluxo de compra  Selecionando primeiro produto da listagem",
               "timedOut": null,
-              "duration": 3566,
+              "duration": 5948,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.selecioneProduto(); // cy.visit('shop')\n// cy.get('div[data-product-id=2559]').click()\n// cy.contains('Abominable Hoodie')",
               "err": {},
-              "uuid": "319b7bce-f3fc-4f55-a421-f459ef6d57ac",
-              "parentUUID": "1f541b35-855b-4c53-bf8a-822117a44f0e",
+              "uuid": "1de254bc-449f-4aeb-b3cd-dd008786a80f",
+              "parentUUID": "cf1877c8-ae90-403c-8577-0d000f0f88cf",
               "isHook": false,
               "skipped": false
             },
@@ -74,36 +74,31 @@
               "title": "Adicionando produto ao carrinho e realizando checkout",
               "fullTitle": "Fluxo de compra  Adicionando produto ao carrinho e realizando checkout",
               "timedOut": null,
-              "duration": 18408,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 18688,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "// cy.visit('product/abominable-hoodie')\ndescribe('Adicionando produto', () => {\n  cy.adicioneProduto(); // cy.get('.button-variable-item-XS').click()\n  // cy.get('.button-variable-item-Blue').click()\n  // cy.get('.single_add_to_cart_button').click()\n});\ndescribe('Verificando carrinho', () => {\n  cy.verifiqueCarrinho(); // cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()\n  // cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .view-cart').click()\n  // cy.get('.page-title').should('contain', 'Carrinho')\n  // cy.url().should('contain', 'cart')\n  // cy.get('.checkout-button').click() \n});\ndescribe('Realizando checkout', () => {\n  cy.realizeCheckout(); // cy.url().should('contain', 'checkout')\n  // cy.get('#billing_first_name').type('Mestre')\n  // cy.get('#billing_last_name').type('Kame')\n  // cy.get('#billing_company').type('Capsula Corp')\n  // cy.get('select#billing_country').select(data.pais, { force: true })\n  // cy.get('#billing_address_1').type(data.endereco)\n  // cy.get('#billing_address_2').type(data.complemento)\n  // cy.get('#billing_city').type(data.cidade)\n  // cy.get('select#billing_state').select(data.estado, { force: true })\n  // cy.get('#billing_postcode').type(data.cep)\n  // cy.get('#billing_phone').type(data.fone)\n  // cy.get('#billing_email').type(data.email)\n  // cy.get('#order_comments').type(data.comentario)\n  // cy.get('#place_order').click()\n});\ndescribe('Finalizando pedido ', () => {\n  cy.finalizePedido(); // cy.url().should('contain', 'order-received')\n  // cy.get('.page-title').should('contain', 'Pedido recebido')\n});",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 4000ms: expected 'http://lojaebac.ebaconline.art.br/checkout/' to include 'order-received'",
-                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'http://lojaebac.ebaconline.art.br/checkout/' to include 'order-received'\n    at Context.eval (http://lojaebac.ebaconline.art.br/__cypress/tests?p=cypress/support/index.js:193:12)",
-                "diff": null
-              },
-              "uuid": "4b208161-ab22-46f8-b4ae-3d84216dd56c",
-              "parentUUID": "1f541b35-855b-4c53-bf8a-822117a44f0e",
+              "err": {},
+              "uuid": "706ee558-14c6-449a-bbec-3d3b8bfa253e",
+              "parentUUID": "cf1877c8-ae90-403c-8577-0d000f0f88cf",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3fe2bbbf-7ff3-4cc7-9fa2-881608799d2c",
-            "319b7bce-f3fc-4f55-a421-f459ef6d57ac"
+            "658ff71b-687c-4c66-95f9-043666a169d5",
+            "1de254bc-449f-4aeb-b3cd-dd008786a80f",
+            "706ee558-14c6-449a-bbec-3d3b8bfa253e"
           ],
-          "failures": [
-            "4b208161-ab22-46f8-b4ae-3d84216dd56c"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 26173,
+          "duration": 33329,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
