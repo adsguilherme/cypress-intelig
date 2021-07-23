@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-23T01:12:37.858Z",
-    "end": "2021-07-23T01:13:19.231Z",
-    "duration": 41373,
+    "start": "2021-07-23T01:17:35.439Z",
+    "end": "2021-07-23T01:18:18.125Z",
+    "duration": 42686,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "65ec0fb9-701e-4e74-b964-1eba31c3bc48",
+      "uuid": "3d8530f8-c41d-4f26-98b7-8ccb274712dc",
       "title": "",
       "fullFile": "cypress/integration/compra.spec.js",
       "file": "cypress/integration/compra.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cf1877c8-ae90-403c-8577-0d000f0f88cf",
+          "uuid": "67d69832-14a4-497c-b078-d8a52f443d3a",
           "title": "Fluxo de compra ",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Clicando no link comprar deve direcionar para a página de compra",
               "fullTitle": "Fluxo de compra  Clicando no link comprar deve direcionar para a página de compra",
               "timedOut": null,
-              "duration": 8693,
+              "duration": 8390,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.paginaDeCompra(); // cy.visit('/')\n// cy.get('#primary-menu > .menu-item-629 > a').as('menuCompra')\n// cy.get('@menuCompra').click()\n// cy.contains('Produtos')\n// cy.get('@menuCompra').contains('Comprar').and('have.attr', 'href').and('include', 'shop')\n// cy.get('.page-title').should('contain', 'Produtos')\n// cy.url().should('contain', 'shop')",
               "err": {},
-              "uuid": "658ff71b-687c-4c66-95f9-043666a169d5",
-              "parentUUID": "cf1877c8-ae90-403c-8577-0d000f0f88cf",
+              "uuid": "4bfcf003-fac3-4af2-8a48-3e8c8ee74ca8",
+              "parentUUID": "67d69832-14a4-497c-b078-d8a52f443d3a",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Selecionando primeiro produto da listagem",
               "fullTitle": "Fluxo de compra  Selecionando primeiro produto da listagem",
               "timedOut": null,
-              "duration": 5948,
+              "duration": 5199,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.selecioneProduto(); // cy.visit('shop')\n// cy.get('div[data-product-id=2559]').click()\n// cy.contains('Abominable Hoodie')",
               "err": {},
-              "uuid": "1de254bc-449f-4aeb-b3cd-dd008786a80f",
-              "parentUUID": "cf1877c8-ae90-403c-8577-0d000f0f88cf",
+              "uuid": "4aef51c6-7948-4f9d-a32f-f00a81c3e695",
+              "parentUUID": "67d69832-14a4-497c-b078-d8a52f443d3a",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Adicionando produto ao carrinho e realizando checkout",
               "fullTitle": "Fluxo de compra  Adicionando produto ao carrinho e realizando checkout",
               "timedOut": null,
-              "duration": 18688,
+              "duration": 19450,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "// cy.visit('product/abominable-hoodie')\ndescribe('Adicionando produto', () => {\n  cy.adicioneProduto(); // cy.get('.button-variable-item-XS').click()\n  // cy.get('.button-variable-item-Blue').click()\n  // cy.get('.single_add_to_cart_button').click()\n});\ndescribe('Verificando carrinho', () => {\n  cy.verifiqueCarrinho(); // cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()\n  // cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .view-cart').click()\n  // cy.get('.page-title').should('contain', 'Carrinho')\n  // cy.url().should('contain', 'cart')\n  // cy.get('.checkout-button').click() \n});\ndescribe('Realizando checkout', () => {\n  cy.realizeCheckout(); // cy.url().should('contain', 'checkout')\n  // cy.get('#billing_first_name').type('Mestre')\n  // cy.get('#billing_last_name').type('Kame')\n  // cy.get('#billing_company').type('Capsula Corp')\n  // cy.get('select#billing_country').select(data.pais, { force: true })\n  // cy.get('#billing_address_1').type(data.endereco)\n  // cy.get('#billing_address_2').type(data.complemento)\n  // cy.get('#billing_city').type(data.cidade)\n  // cy.get('select#billing_state').select(data.estado, { force: true })\n  // cy.get('#billing_postcode').type(data.cep)\n  // cy.get('#billing_phone').type(data.fone)\n  // cy.get('#billing_email').type(data.email)\n  // cy.get('#order_comments').type(data.comentario)\n  // cy.get('#place_order').click()\n});\ndescribe('Finalizando pedido ', () => {\n  cy.finalizePedido(); // cy.url().should('contain', 'order-received')\n  // cy.get('.page-title').should('contain', 'Pedido recebido')\n});",
               "err": {},
-              "uuid": "706ee558-14c6-449a-bbec-3d3b8bfa253e",
-              "parentUUID": "cf1877c8-ae90-403c-8577-0d000f0f88cf",
+              "uuid": "e1846e5b-d56d-4be8-ab6f-9816a8dffad6",
+              "parentUUID": "67d69832-14a4-497c-b078-d8a52f443d3a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "658ff71b-687c-4c66-95f9-043666a169d5",
-            "1de254bc-449f-4aeb-b3cd-dd008786a80f",
-            "706ee558-14c6-449a-bbec-3d3b8bfa253e"
+            "4bfcf003-fac3-4af2-8a48-3e8c8ee74ca8",
+            "4aef51c6-7948-4f9d-a32f-f00a81c3e695",
+            "e1846e5b-d56d-4be8-ab6f-9816a8dffad6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 33329,
+          "duration": 33039,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
