@@ -11,7 +11,7 @@
     "report:mocha": "marge index.json",
     "report:mochaB": "npx marge index.json",
     "report:cleanMocha": "rm -rf mochawesome-report",
-    "report:cleanMochaB": "rm -rf mochawesome-report index.json cypress/reports/cucumber-json/** || true"
+    "report:cleanMochaB": "rm -rf mochawesome-report index.json || true"
   },
   "keywords": [],
   "author": "",
